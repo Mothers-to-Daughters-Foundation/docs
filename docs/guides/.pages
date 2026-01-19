@@ -1,0 +1,9 @@
+# Navigation configuration for guides directory
+
+title: Guides
+
+# Optional: Specify order explicitly
+# nav:
+#   - writing-docs.md
+#   - adding-pages.md
+#   - using-tags.md

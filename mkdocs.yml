@@ -1,0 +1,97 @@
+site_name: Documentation Hub
+site_url: https://mothers-to-daughters-foundation.github.io/docs/
+site_description: A simple, easy-to-use documentation hub for your organization
+site_author: Mothers to Daughters Foundation
+
+# Repository information for "Edit this page" links
+repo_name: mothers-to-daughters-foundation/docs
+repo_url: https://github.com/mothers-to-daughters-foundation/docs
+edit_uri: edit/main/docs/
+
+# Copyright notice
+copyright: Copyright &copy; 2024 Your Organization
+
+# Theme configuration
+theme:
+  name: material
+  language: en
+  palette:
+    # Light mode
+    - scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+  icon:
+    repo: fontawesome/brands/github
+
+# Plugins
+plugins:
+  - awesome-pages  # Auto-generates navigation from filesystem
+  - search:
+      lang: en
+  - tags:
+      tags_file: tags.md  # Main tags index page
+      tags_hierarchy: false  # Set to true for nested tags like "Platform/Web"
+      tags_slugify_separator: '-'  # URL separator for tag pages
+  - meta
+
+# Navigation is auto-generated from filesystem structure
+# Control via .pages files in each directory
+# See docs/.pages for root navigation structure
+
+# Markdown extensions
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - tables
+  - footnotes
+
+# Extra configuration
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/mothers-to-daughters-foundation/docs
+  version:
+    provider: mike
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX  # Optional: Add your Google Analytics ID if desired

@@ -1,0 +1,9 @@
+# Navigation configuration for getting-started directory
+# Pages are automatically included in alphabetical order unless specified here
+
+title: Getting Started
+
+# Optional: Specify order explicitly
+# nav:
+#   - overview.md
+#   - quick-start.md

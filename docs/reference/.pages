@@ -1,0 +1,8 @@
+# Navigation configuration for reference directory
+
+title: Reference
+
+# Optional: Specify order explicitly
+# nav:
+#   - api.md
+#   - configuration.md

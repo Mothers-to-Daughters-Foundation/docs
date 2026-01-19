@@ -1,0 +1,10 @@
+# Navigation configuration for root docs directory
+# This file controls the order and titles of top-level items
+# Navigation is auto-generated from folder structure - this file just controls order
+
+nav:
+  - index.md
+  - getting-started/
+  - guides/
+  - reference/
+  - tags.md

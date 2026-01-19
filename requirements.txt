@@ -1,0 +1,5 @@
+mkdocs>=1.5.3
+mkdocs-material>=9.5.0
+mkdocs-meta-plugin>=0.1.0
+mkdocs-tags-plugin>=0.1.0
+mkdocs-awesome-pages-plugin>=2.9.2
